@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 
     <meta charset="utf-8">
@@ -47,7 +48,7 @@
         <legend>Delivery Method</legend>
         <p>
             <input type="radio" id="delivery1" name="deliveryMethod" value="delivery1" >
-            <label for="e-ticket">e-ticket</label>
+            <label id="e-ticket">e-ticket</label>
         </p>
         <p>
             <input type="radio" id="delivery2" name="deliveryMethod" value="delivery2">
@@ -65,29 +66,29 @@
 
             <fieldset class="outputFields">
                 <legend>name</legend>
-                <output type="text" id="personalDetails">
+                <output name="text" id="personalDetails"></output>
             </fieldset>
 
             <fieldset class="outputFields">
                 <legend>address</legend>
-                <output type="text" id="givenAddress">
+                <output name="text" id="givenAddress"></output>
             </fieldset>
 
             <fieldset class="outputFields">
                 <legend>number of seats</legend>
-                <output type="number" id="noOfSeats">
+                <output name="number" id="noOfSeats"></output>
             </fieldset>
 
             <fieldset id="showBox">
 
             <fieldset class="outputFields">
                 <legend>show name</legend>
-                <output type="text" id="showTitle">
+                <output name="text" id="showTitle"></output>
             </fieldset>
 
             <fieldset class="outputFields">
                  <legend>show price</legend>
-                <output type="number" id="showPrice">
+                <output name="number" id="showPrice"></output>
              </fieldset>
 
             </fieldset>
@@ -96,29 +97,29 @@
 
             <fieldset class="outputFields">
                  <legend>delivery</legend>
-                 <output type="text" id="deliveryName">
+                 <output name="text" id="deliveryName"></output>
              </fieldset>
 
              <fieldset class="outputFields">
                  <legend>delivery cost</legend>
-                 <output type="number" id="deliveryCost">
+                 <output name="number" id="deliveryCost"></output>
              </fieldset>
 
         </fieldset>
 
         <fieldset class="outputFields">
             <legend>Total cost</legend>
-            <output type="number" id="cost">
+            <output name="number" id="cost"></output>
         </fieldset>
 
         <fieldset class="outputFields">
             <legend>discount</legend>
-            <output type="number" id="discount">
+            <output name="number" id="discount"></output>
         </fieldset>
 
         <fieldset class="outputFields">
             <legend>Total cost after discount</legend>
-            <output type="number" id="totalCost">
+            <output name="number" id="totalCost"></output>
         </fieldset>
         
         <button type="submit" id="bookNow" name="bookNow">Book now - calculate</button>

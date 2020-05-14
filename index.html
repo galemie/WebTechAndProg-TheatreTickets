@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Part of CV catalog, JS skills presented as theatre ticket booking app, created for assigment.">
+    <link rel="shortcut icon" href="./pictures/glf.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title> G A L Theatre Ticket</title>
+
+</head>
+<body>
+    <main>
+    <div id="inputFields">
+    <fieldset id="input">
+        <legend>Your Personal Details</legend>
+        <fieldset class="inputFields">
+            <legend>name</legend>
+            <input type="text" id="name" value="John Smith" onfocus="if(this.value==this.defaultValue)this.value=''">
+        </fieldset>
+
+        <fieldset class="inputFields">
+            <legend>address</legend>
+            <input type="text" id="address" value="Apartment 1, SW1A 1AA" onfocus="if(this.value==this.defaultValue)this.value=''">
+        </fieldset>
+
+        <fieldset class="inputFields">
+            <legend>number of tickets</legend>
+            <input type="number" id="quantity" min="0">
+        </fieldset>
+
+        <button type="submit" id="submit" name="submit">Submit</button>
+
+    </fieldset>
+
+    <fieldset id="showList">
+        <legend>Repertory</legend>
+        <img id="firstShow" src="pictures/phantom.jpg" alt="Phantom of the Opera, official poster" >
+        <img id="secondShow" src="pictures/Hamilton.jpg" alt="Hamilton, official poster" >
+        <img id="thirdShow" src="pictures/lion.jpg" alt="Lion King - musical, official poster" >
+        <img id="fourthShow" src="pictures/saigon.jpg" alt="Miss Saigon, official poster" >
+    </fieldset>
+
+    <fieldset id="delivery">
+        <legend>Delivery Method</legend>
+        <p>
+            <input type="radio" id="delivery1" name="deliveryMethod" value="delivery1" >
+            <label for="e-ticket">e-ticket</label>
+        </p>
+        <p>
+            <input type="radio" id="delivery2" name="deliveryMethod" value="delivery2">
+            <label for="delivery2">collection in the cinema</label>
+        </p>
+        <p>
+            <input type="radio" id="delivery3" name="deliveryMethod" value="delivery3">
+            <label for="delivery3">send by post</label>
+        </p>
+    </fieldset>
+    </div>
+    <div id="outputFields">
+    <fieldset id="output">
+        <legend>Summary</legend>
+
+            <fieldset class="outputFields">
+                <legend>name</legend>
+                <output type="text" id="personalDetails">
+            </fieldset>
+
+            <fieldset class="outputFields">
+                <legend>address</legend>
+                <output type="text" id="givenAddress">
+            </fieldset>
+
+            <fieldset class="outputFields">
+                <legend>number of seats</legend>
+                <output type="number" id="noOfSeats">
+            </fieldset>
+
+            <fieldset id="showBox">
+
+            <fieldset class="outputFields">
+                <legend>show name</legend>
+                <output type="text" id="showTitle">
+            </fieldset>
+
+            <fieldset class="outputFields">
+                 <legend>show price</legend>
+                <output type="number" id="showPrice">
+             </fieldset>
+
+            </fieldset>
+
+            <fieldset id="deliveryBox">
+
+            <fieldset class="outputFields">
+                 <legend>delivery</legend>
+                 <output type="text" id="deliveryName">
+             </fieldset>
+
+             <fieldset class="outputFields">
+                 <legend>delivery cost</legend>
+                 <output type="number" id="deliveryCost">
+             </fieldset>
+
+        </fieldset>
+
+        <fieldset class="outputFields">
+            <legend>Total cost</legend>
+            <output type="number" id="cost">
+        </fieldset>
+
+        <fieldset class="outputFields">
+            <legend>discount</legend>
+            <output type="number" id="discount">
+        </fieldset>
+
+        <fieldset class="outputFields">
+            <legend>Total cost after discount</legend>
+            <output type="number" id="totalCost">
+        </fieldset>
+        
+        <button type="submit" id="bookNow" name="bookNow">Book now - calculate</button>
+        <button type="submit" id="showDiscount" name="showDiscount">Show discount</button>
+
+    </fieldset>
+    </div>
+        <script src="scripts/main.js"></script>
+    </main>
+        <footer>
+            <h3>Please do not hesitate to contact me</h3>
+            <p>email: g.lemieszek(at)gmail.com</p>
+            <a href=mailto:g.lemieszek(at)gmail.com>click here to send me an email</a>
+            <p>mobile: xxxx xxx xxx</p>
+
+            <h3>Copyrights for pictures</h3>
+            <p>All pictures are licensed for non-comercial use.<p>
+            <p>Lion King poster - By Source, Fair use, href=https://en.wikipedia.org/w/index.php?curid=22755712</p>
+            <p>Hamilton Poster - By Source (WP:NFCC#4), Fair use, https://en.wikipedia.org/w/index.php?curid=55278676</p>
+            <p>Miss Saigon poster - https://en.wikipedia.org/w/index.php?curid=15236582</p>
+            <p>The phantom of the opera  poster - https://en.wikipedia.org/w/index.php?curid=1967136</p>
+        </footer>
+</body>
+</html>
